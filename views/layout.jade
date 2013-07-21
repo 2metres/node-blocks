@@ -1,0 +1,34 @@
+!!!5
+html
+  head
+    title #{title}
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+  
+  body
+    header
+      .container
+        a.logo
+          h1.title 2metres
+          h1.subtitle The Design of Andrew Carr
+
+        ul.social
+          li
+            a.twitter
+          li
+            a.dribble
+          li
+            a.linkedin
+          li
+            a.google-plus
+
+    section.content
+      block content
+
+    footer
+      p Footer
+
+    block scripts
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+      script(src="/js/flexslider/jquery.flexslider-min.js")
+      script(src="/js/script.js")

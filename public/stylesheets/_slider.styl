@@ -1,0 +1,46 @@
+.flexslider
+  position relative
+
+.flex-control-paging
+  li
+    display inline-block
+    margin-right 12px
+
+    a
+      display block
+      background-color rgba(0,0,0,0.3)
+      overflow hidden
+      height 12px
+      width 12px
+      text-indent -200%
+      border-radius(12px)
+      box-shadow inset 0 1px 0 rgba(0,0,0,0.3)
+      transition all 300ms linear
+
+      &.flex-active
+        background-color rgba(255,255,255,0.8)
+        box-shadow inset 0 1px 0 white, 0 1px 3px rgba(0,0,0,0.3)
+
+    &:last-child
+      margin-right 0
+
+
+.flex-direction-nav
+  position absolute
+  top 0
+  right 0
+  bottom 0
+  left 0
+
+  .flex-prev
+    display none
+
+  .flex-next
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    margin 15%
+    text-indent -200%
+
