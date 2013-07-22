@@ -1,5 +1,6 @@
 $(window).load(function() {
-  $('.flexslider').flexslider({
+  $('.flexslider').flexslider(
+    {
     animation: "slide",
     useCSS: true,
     easing: "swing",
@@ -7,5 +8,7 @@ $(window).load(function() {
     slideshow: false,
     prevText: "<",
     nextText: ">",  
-  });
+    }
+  );
+  $("[data-toggle='tooltip']").tooltip();
 });

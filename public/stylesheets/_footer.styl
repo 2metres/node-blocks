@@ -1,0 +1,26 @@
+footer
+  padding 30px 10px 60px
+  background #333
+  color whitesmoke
+
+  h4
+    margin-bottom 60px
+
+.peek-a-boo
+
+  span:first-child
+    display inline
+    opacity 1
+
+  span:nth-child(2)
+    display none
+    opacity 0
+
+  &:hover
+    span:first-child
+      display none
+      opacity 0
+
+    span:nth-child(2)
+      display inline
+      opacity 1

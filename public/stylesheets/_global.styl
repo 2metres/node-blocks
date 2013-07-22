@@ -12,7 +12,7 @@ img
 h1, h2, h3, h4, h5
   font-family 'HelveticaNeue-Light', sans-serif
   line-height 100%
-  letter-spacing -0.05em
+  letter-spacing -0.1px
   margin  0.2em 0 0.4em
 
 h1
@@ -60,6 +60,7 @@ header
 
 .project
   padding 20px 0 0
+  overflow hidden
 
   p
     line-height 140%
@@ -88,26 +89,9 @@ header
         background black
         border 2px black solid
 
-.social
-  font-family 'fontello', display
-  margin-top 20px
-
-  li
-    display inline-block
-    margin-left 20px
-
-    &:first-child
-      margin 0
-
-    a
-      font-size 200%
-      text-decoration none
-      color whitesmoke
-
-footer
-  padding 40px 10px
-  background #333
-  color whitesmoke
+@import '_social'
+@import '_tooltip'
+@import '_footer'
 
 @media (min-width: 720px)
   .project
