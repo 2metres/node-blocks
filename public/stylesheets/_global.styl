@@ -3,61 +3,117 @@
 
 body
   text-align center
-  font-family 'HelveticaNeue', sans-serif
+  font-family 'HelveticaNeue-Light', sans-serif
+  min-width 320px
 
 img
   max-width 100%
 
 h1, h2, h3, h4, h5
-  font-weight bold
-  line-height 110%
-  margin  5px 0 10px
-  font-family Georgia, serif
+  font-family 'HelveticaNeue-Light', sans-serif
+  line-height 100%
+  letter-spacing -0.05em
+  margin  0.2em 0 0.4em
 
 h1
-  font-size 200%
+  font-size 320%
 
 h2
-  font-size 180%
-
-h3
-  font-size 160%
-
-h4
-  font-size 140%
-
-h5
-  font-size 120%
-
-.title
   font-size 280%
 
-.subtitle
-  font-size 100%
+h3
+  font-size 220%
+
+h4
+  font-size 160%
+
+h5
+  font-size 140%
+
+@font-face
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?75581819');
+  src: url('../fonts/fontello.eot?75581819#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.svg?75581819#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+.container
+  max-width 540px
+  margin 0 auto
 
 header
   background white
   padding 20px
 
-article
-  padding 20px 0
+.btn
+  display inline-block
+  border none
+  padding 16px 28px
+  text-decoration none
+  border-radius 4px
+  min-width 138px
+  margin-top 10px
 
-  &.light
-    color #333
-    background whitesmoke
+.btn + .btn
+  margin-left 10px
 
-  &.dark
-    color whitesmoke
-    background #222
+.project
+  padding 20px 0 0
 
-  &.project
-    h3
-      padding 0 20px
-    p
-      padding 0 20px
-      line-height 140%
+  p
+    line-height 140%
+    margin-bottom 0.8em
+
+  .container
+    padding 0 1em 2em 1em
+
+  .gallery
+    position relative
+    width 100%
+    padding-bottom: 100%
+    margin 0 auto
+
+    &.iphone
+      background-image url('/images/gallery-iphone5-white.png')
+      background-size cover
+
+      .frame
+        position absolute
+        top 0
+        right 0
+        bottom 0
+        left 0
+        margin 23% 29% 2.8% 29%
+        background black
+        border 2px black solid
+
+.social
+  font-family 'fontello', display
+  margin-top 20px
+
+  li
+    display inline-block
+    margin-left 20px
+
+    &:first-child
+      margin 0
+
+    a
+      font-size 200%
+      text-decoration none
+      color whitesmoke
 
 footer
   padding 40px 10px
   background #333
   color whitesmoke
+
+@media (min-width: 720px)
+  .project
+    .gallery
+      width 720px
+      padding-bottom 720px
+
+  .iphone .flexslider .flex-direction-nav li a
+    text-indent 0 !important

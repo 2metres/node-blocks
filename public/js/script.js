@@ -4,6 +4,8 @@ $(window).load(function() {
     useCSS: true,
     easing: "swing",
     pauseOnHover: true,
-    slideshow: false
+    slideshow: false,
+    prevText: "<",
+    nextText: ">",  
   });
 });
