@@ -134,6 +134,7 @@ h5 {
   font-weight: normal;
   font-style: normal;
 }
+@import url("http://fonts.googleapis.com/css?family=Roboto+Condensed:300");
 .container {
   max-width: 540px;
   margin: 0 auto;
@@ -437,8 +438,8 @@ footer h4 {
 #suncorp .btn {
   background: #62a6a4;
   color: #f5f5f5;
-  -webkit-box-shadow: 0 3px 0 #4c8785;
-  box-shadow: 0 3px 0 #4c8785;
+  -webkit-box-shadow: 0 6px 0 #4c8785;
+  box-shadow: 0 6px 0 #4c8785;
 }
 #suncorp .flex-control-paging li a {
   border: 1px #006c64 solid;
@@ -459,8 +460,8 @@ footer h4 {
 #rea .btn {
   background: #a00125;
   color: #fff;
-  -webkit-box-shadow: 0 3px 0 #80011e;
-  box-shadow: 0 3px 0 #80011e;
+  -webkit-box-shadow: 0 6px 0 #80011e;
+  box-shadow: 0 6px 0 #80011e;
 }
 #rea .flex-control-paging li a {
   border: 1px #fff solid;
@@ -481,8 +482,8 @@ footer h4 {
 #zoe .btn {
   background: #004c74;
   color: #fff;
-  -webkit-box-shadow: 0 3px 0 #00263a;
-  box-shadow: 0 3px 0 #00263a;
+  -webkit-box-shadow: 0 6px 0 #00263a;
+  box-shadow: 0 6px 0 #00263a;
 }
 #zoe .flex-control-paging li a {
   border: 1px #fff solid;

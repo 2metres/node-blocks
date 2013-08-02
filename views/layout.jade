@@ -4,22 +4,17 @@ html
     title #{title}
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     link(rel="stylesheet", href="/stylesheets/style.css")
-  
+    
+    // Business in the front
+    include includes/scripts
+
   body
-    header
-      .container
-        a.logo
-          h1.title 2metres
-          h4.subtitle The Design of Andrew Carr
+    include includes/header
 
-    section.content
-      block content
+    block content
 
-    footer
-      block footer
-      
+    include includes/footer 
+
+    // Party in the back
     block scripts
-      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
-      script(src="/js/flexslider/jquery.flexslider-min.js")
-      script(src="/js/bootstrap/bootstrap-tooltip.min.js")
-      script(src="/js/script.js")
+
