@@ -1,32 +1,38 @@
-suncorp-a = whitesmoke
-suncorp-b = #006c64
-suncorp-c = #62a6a4
+btn-depth = 6px
+
+suncorp-bg        = #006c64
+suncorp-text      = whitesmoke
+suncorp-btn       = #62a6a4
+suncorp-btn-color = white
 
 #suncorp
 
-  background suncorp-a
-  color suncorp-b
+  background suncorp-bg
+  color suncorp-text
 
   .btn
-    background suncorp-c
-    color suncorp-a
-    box-shadow 0 6px 0 darken(suncorp-c, 20%)
+    background suncorp-btn
+    color suncorp-btn-color
+    box-shadow 0 btn-depth 0 darken(suncorp-btn, 20%)
 
   .flex-control-paging li a
-    border 1px suncorp-b solid
+    border 1px suncorp-text solid
 
     &.flex-active
-      background suncorp-b
+      background suncorp-text
 
   .flex-direction-nav a
-    color darken(suncorp-a, 20%)
+    color darken(suncorp-bg, 20%)
 
     &:hover
-      color suncorp-b
+      color suncorp-text
+
+
+//  Convert to the style above & make a function dammit!
 
 rea-a = #c8012e
 rea-b = white
-rea-c = darken(rea-a, 20%)
+rea-c = whitesmoke
 
 #rea
   background rea-a
@@ -34,8 +40,8 @@ rea-c = darken(rea-a, 20%)
 
   .btn
     background rea-c
-    color rea-b
-    box-shadow 0 6px 0 darken(rea-c, 20%)
+    color rea-a
+    box-shadow 0 btn-depth 0 darken(rea-c, 20%)
 
   .flex-control-paging li a
     border 1px rea-b solid
@@ -49,34 +55,8 @@ rea-c = darken(rea-a, 20%)
     &:hover
       color rea-b
 
-zoe-a = #35a6df
-zoe-b = white
-zoe-c = #004C74
-
-#zoe
-  background zoe-a
-  color zoe-b
-
-  .btn
-    background zoe-c
-    color zoe-b
-    box-shadow 0 6px 0 darken(zoe-c, 50%)
-
-  .flex-control-paging li a
-    border 1px zoe-b solid
-
-    &.flex-active
-      background zoe-b
-
-  .flex-direction-nav a
-    color darken(zoe-a, 20%)
-
-    &:hover
-      color zoe-b
-
-
 tiger-a = #FEAA00
-tiger-b = #403E40
+tiger-b = white
 tiger-c = #26A9E1
 
 #tiger
@@ -86,7 +66,7 @@ tiger-c = #26A9E1
   .btn
     background tiger-c
     color tiger-b
-    box-shadow 0 6px 0 darken(tiger-c, 50%)
+    box-shadow 0 btn-depth 0 darken(tiger-c, 20%)
 
   .flex-control-paging li a
     border 1px tiger-b solid
@@ -100,3 +80,27 @@ tiger-c = #26A9E1
     &:hover
       color tiger-b
 
+zoe-a = #35a6df
+zoe-b = white
+zoe-c = #004C74
+
+#zoe
+  background zoe-a
+  color zoe-b
+
+  .btn
+    background zoe-c
+    color zoe-b
+    box-shadow 0 btn-depth 0 darken(zoe-c, 20%)
+
+  .flex-control-paging li a
+    border 1px zoe-b solid
+
+    &.flex-active
+      background zoe-b
+
+  .flex-direction-nav a
+    color darken(zoe-a, 20%)
+
+    &:hover
+      color zoe-b

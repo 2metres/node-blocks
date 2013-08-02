@@ -146,9 +146,9 @@ h5 {
   border: none;
   padding: 16px 28px;
   text-decoration: none;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  min-width: 138px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  min-width: 144px;
   margin-top: 10px;
 }
 .btn + .btn {
@@ -165,6 +165,11 @@ h5 {
 .project .container {
   padding: 0 1em 2em 1em;
 }
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 header {
   background: #fff;
   color: #3b3c3a;
@@ -175,18 +180,6 @@ header h1 {
 }
 header h4 {
   font-weight: 300;
-}
-header .jump-ahead li {
-  display: inline-block;
-  margin-right: 12px;
-  background: #f00;
-  overflow: hidden;
-  width: 32px;
-  height: 32px;
-}
-header .jump-ahead li a {
-  line-height: 32px;
-  display: block;
 }
 .gallery {
   position: relative;
@@ -237,6 +230,22 @@ header .jump-ahead li a {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+.gallery.imac {
+  background-image: url("/images/gallery-imac.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.gallery.imac .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 35% 7% 20.2% 7%;
+  background: #000;
+  border: 2px #000 solid;
 }
 @media (min-width: 720px) {
   .project .gallery {
@@ -480,36 +489,36 @@ footer {
   text-align: right;
 }
 #suncorp {
-  background: #f5f5f5;
-  color: #006c64;
+  background: #006c64;
+  color: #f5f5f5;
 }
 #suncorp .btn {
   background: #62a6a4;
-  color: #f5f5f5;
+  color: #fff;
   -webkit-box-shadow: 0 6px 0 #4c8785;
   box-shadow: 0 6px 0 #4c8785;
 }
 #suncorp .flex-control-paging li a {
-  border: 1px #006c64 solid;
+  border: 1px #f5f5f5 solid;
 }
 #suncorp .flex-control-paging li a.flex-active {
-  background: #006c64;
+  background: #f5f5f5;
 }
 #suncorp .flex-direction-nav a {
-  color: #c4c4c4;
+  color: #005650;
 }
 #suncorp .flex-direction-nav a:hover {
-  color: #006c64;
+  color: #f5f5f5;
 }
 #rea {
   background: #c8012e;
   color: #fff;
 }
 #rea .btn {
-  background: #a00125;
-  color: #fff;
-  -webkit-box-shadow: 0 6px 0 #80011e;
-  box-shadow: 0 6px 0 #80011e;
+  background: #f5f5f5;
+  color: #c8012e;
+  -webkit-box-shadow: 0 6px 0 #c4c4c4;
+  box-shadow: 0 6px 0 #c4c4c4;
 }
 #rea .flex-control-paging li a {
   border: 1px #fff solid;
@@ -523,6 +532,28 @@ footer {
 #rea .flex-direction-nav a:hover {
   color: #fff;
 }
+#tiger {
+  background: #feaa00;
+  color: #fff;
+}
+#tiger .btn {
+  background: #26a9e1;
+  color: #fff;
+  -webkit-box-shadow: 0 6px 0 #1a89b9;
+  box-shadow: 0 6px 0 #1a89b9;
+}
+#tiger .flex-control-paging li a {
+  border: 1px #fff solid;
+}
+#tiger .flex-control-paging li a.flex-active {
+  background: #fff;
+}
+#tiger .flex-direction-nav a {
+  color: #cb8800;
+}
+#tiger .flex-direction-nav a:hover {
+  color: #fff;
+}
 #zoe {
   background: #35a6df;
   color: #fff;
@@ -530,8 +561,8 @@ footer {
 #zoe .btn {
   background: #004c74;
   color: #fff;
-  -webkit-box-shadow: 0 6px 0 #00263a;
-  box-shadow: 0 6px 0 #00263a;
+  -webkit-box-shadow: 0 6px 0 #003d5d;
+  box-shadow: 0 6px 0 #003d5d;
 }
 #zoe .flex-control-paging li a {
   border: 1px #fff solid;
@@ -544,26 +575,4 @@ footer {
 }
 #zoe .flex-direction-nav a:hover {
   color: #fff;
-}
-#tiger {
-  background: #feaa00;
-  color: #403e40;
-}
-#tiger .btn {
-  background: #26a9e1;
-  color: #403e40;
-  -webkit-box-shadow: 0 6px 0 #105674;
-  box-shadow: 0 6px 0 #105674;
-}
-#tiger .flex-control-paging li a {
-  border: 1px #403e40 solid;
-}
-#tiger .flex-control-paging li a.flex-active {
-  background: #403e40;
-}
-#tiger .flex-direction-nav a {
-  color: #cb8800;
-}
-#tiger .flex-direction-nav a:hover {
-  color: #403e40;
 }
