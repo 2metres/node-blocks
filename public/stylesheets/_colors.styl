@@ -72,4 +72,31 @@ zoe-c = #004C74
     color darken(zoe-a, 20%)
 
     &:hover
-      color zoe-b    
+      color zoe-b
+
+
+tiger-a = #FEAA00
+tiger-b = #403E40
+tiger-c = #26A9E1
+
+#tiger
+  background tiger-a
+  color tiger-b
+
+  .btn
+    background tiger-c
+    color tiger-b
+    box-shadow 0 6px 0 darken(tiger-c, 50%)
+
+  .flex-control-paging li a
+    border 1px tiger-b solid
+
+    &.flex-active
+      background tiger-b
+
+  .flex-direction-nav a
+    color darken(tiger-a, 20%)
+
+    &:hover
+      color tiger-b
+

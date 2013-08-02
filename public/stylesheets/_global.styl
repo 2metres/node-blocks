@@ -3,32 +3,35 @@
 
 body
   text-align center
-  font-family 'HelveticaNeue-Light', sans-serif
+  font-family 'Source Sans Pro', 'HelveticaNeue-Light', sans-serif
+  font-weight 300
   min-width 320px
+  font-size 18px
 
 img
   max-width 100%
 
 h1, h2, h3, h4, h5
-  font-family 'HelveticaNeue-Light', sans-serif
+  font-family 'Dosis', 'HelveticaNeue-Light', sans-serif
+  font-weight 800
   line-height 100%
   letter-spacing -0.1px
   margin  0.2em 0 0.4em
 
 h1
-  font-size 320%
+  font-size 300%
 
 h2
-  font-size 280%
+  font-size 200%
 
 h3
-  font-size 220%
+  font-size 170%
 
 h4
-  font-size 160%
+  font-size 130%
 
 h5
-  font-size 140%
+  font-size 100%
 
 @font-face
   font-family: 'fontello';
@@ -38,15 +41,9 @@ h5
   font-weight: normal;
   font-style: normal;
 
-@import url('http://fonts.googleapis.com/css?family=Roboto+Condensed:300')
-
 .container
   max-width 540px
   margin 0 auto
-
-header
-  background white
-  padding 20px
 
 .btn
   display inline-block
@@ -71,35 +68,8 @@ header
   .container
     padding 0 1em 2em 1em
 
-  .gallery
-    position relative
-    width 100%
-    padding-bottom: 100%
-    margin 0 auto
-
-    &.iphone
-      background-image url('/images/gallery-iphone5-white.png')
-      background-size cover
-
-      .frame
-        position absolute
-        top 0
-        right 0
-        bottom 0
-        left 0
-        margin 23% 29% 2.8% 29%
-        background black
-        border 2px black solid
-
+@import '_header'
+@import '_gallery'
 @import '_social'
 @import '_tooltip'
 @import '_footer'
-
-@media (min-width: 720px)
-  .project
-    .gallery
-      width 720px
-      padding-bottom 720px
-
-  .iphone .flexslider .flex-direction-nav li a
-    text-indent 0 !important
