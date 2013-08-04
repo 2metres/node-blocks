@@ -28,34 +28,61 @@ suncorp-btn-color = white
       color suncorp-text
 
 
-//  Convert to the style above & make a function dammit!
 
-rea-a = #c8012e
-rea-b = white
-rea-c = whitesmoke
+rea-bg        = #c8012e
+rea-text      = white
+rea-btn       = whitesmoke
+rea-btn-color = #c8012e
 
 #rea
-  background rea-a
-  color rea-b
+  background rea-bg
+  color rea-text
 
   .btn
-    background rea-c
-    color rea-a
-    box-shadow 0 btn-depth 0 darken(rea-c, 20%)
+    background rea-btn
+    color rea-btn-color
+    box-shadow 0 btn-depth 0 darken(rea-btn, 20%)
 
   .flex-control-paging li a
-    border 1px rea-b solid
+    border 1px rea-text solid
 
     &.flex-active
-      background rea-b
+      background rea-text
 
   .flex-direction-nav a
-    color darken(rea-a, 20%)
+    color darken(rea-bg, 20%)
 
     &:hover
-      color rea-b
+      color rea-text
 
-tiger-a = #FEAA00
+//  Convert to the style above & make a function dammit!
+
+rea2-a = #ececec
+rea2-b = #c8012e
+rea2-c = #c8012e
+
+#rea2
+  background rea2-a
+  color rea2-b
+
+  .btn
+    background rea2-c
+    color rea2-a
+    box-shadow 0 btn-depth 0 darken(rea2-c, 20%)
+
+  .flex-control-paging li a
+    border 1px rea2-b solid
+
+    &.flex-active
+      background rea2-b
+
+  .flex-direction-nav a
+    color darken(rea2-a, 20%)
+
+    &:hover
+      color rea2-b
+
+tiger-a = #fc9300
 tiger-b = white
 tiger-c = #26A9E1
 
@@ -79,6 +106,32 @@ tiger-c = #26A9E1
 
     &:hover
       color tiger-b
+
+pin-a = #6c3
+pin-b = white
+pin-c = #004C74
+
+#pin
+  background pin-a
+  color pin-b
+
+  .btn
+    background pin-c
+    color pin-b
+    box-shadow 0 btn-depth 0 darken(pin-c, 20%)
+
+  .flex-control-paging li a
+    border 1px pin-b solid
+
+    &.flex-active
+      background pin-b
+
+  .flex-direction-nav a
+    color darken(pin-a, 20%)
+
+    &:hover
+      color pin-b
+
 
 zoe-a = #35a6df
 zoe-b = white
@@ -104,3 +157,29 @@ zoe-c = #004C74
 
     &:hover
       color zoe-b
+
+totalghost-bg        = #1f1f1f
+totalghost-text      = turquoise
+totalghost-btn       = deeppink
+totalghost-btn-color = white
+
+#totalghost
+  background totalghost-bg
+  color totalghost-text
+
+  .btn
+    background totalghost-btn
+    color totalghost-btn-color
+    box-shadow 0 btn-depth 0 darken(totalghost-btn, 20%)
+
+  .flex-control-paging li a
+    border 1px totalghost-text solid
+
+    &.flex-active
+      background totalghost-text
+
+  .flex-direction-nav a
+    color darken(totalghost-bg, 20%)
+
+    &:hover
+      color totalghost-text

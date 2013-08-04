@@ -151,6 +151,8 @@ h5 {
   min-width: 144px;
   margin: 10px auto 0;
   max-width: 240px;
+  font-size: 120%;
+  font-weight: 700;
 }
 .project {
   padding: 20px 0 0;
@@ -182,8 +184,10 @@ header h4 {
 .gallery {
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
   margin: 0 auto;
+}
+.gallery.iphone {
+  padding-bottom: 100%;
 }
 .gallery.iphone .frame {
   position: absolute;
@@ -206,6 +210,9 @@ header h4 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+}
+.gallery.ipad {
+  padding-bottom: 100%;
 }
 .gallery.ipad .frame {
   position: absolute;
@@ -230,10 +237,12 @@ header h4 {
   background-size: cover;
 }
 .gallery.imac {
+  padding-bottom: 100%;
   background-image: url("/images/gallery-imac.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  margin-top: -150px;
 }
 .gallery.imac .frame {
   position: absolute;
@@ -530,8 +539,30 @@ footer {
 #rea .flex-direction-nav a:hover {
   color: #fff;
 }
+#rea2 {
+  background: #ececec;
+  color: #c8012e;
+}
+#rea2 .btn {
+  background: #c8012e;
+  color: #ececec;
+  -webkit-box-shadow: 0 5px 0 #a00125;
+  box-shadow: 0 5px 0 #a00125;
+}
+#rea2 .flex-control-paging li a {
+  border: 1px #c8012e solid;
+}
+#rea2 .flex-control-paging li a.flex-active {
+  background: #c8012e;
+}
+#rea2 .flex-direction-nav a {
+  color: #bdbdbd;
+}
+#rea2 .flex-direction-nav a:hover {
+  color: #c8012e;
+}
 #tiger {
-  background: #feaa00;
+  background: #fc9300;
   color: #fff;
 }
 #tiger .btn {
@@ -547,9 +578,31 @@ footer {
   background: #fff;
 }
 #tiger .flex-direction-nav a {
-  color: #cb8800;
+  color: #ca7600;
 }
 #tiger .flex-direction-nav a:hover {
+  color: #fff;
+}
+#pin {
+  background: #6c3;
+  color: #fff;
+}
+#pin .btn {
+  background: #004c74;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 0 #003d5d;
+  box-shadow: 0 5px 0 #003d5d;
+}
+#pin .flex-control-paging li a {
+  border: 1px #fff solid;
+}
+#pin .flex-control-paging li a.flex-active {
+  background: #fff;
+}
+#pin .flex-direction-nav a {
+  color: #52a329;
+}
+#pin .flex-direction-nav a:hover {
   color: #fff;
 }
 #zoe {
@@ -573,4 +626,26 @@ footer {
 }
 #zoe .flex-direction-nav a:hover {
   color: #fff;
+}
+#totalghost {
+  background: #1f1f1f;
+  color: #40e0d0;
+}
+#totalghost .btn {
+  background: #ff1493;
+  color: #fff;
+  -webkit-box-shadow: 0 5px 0 #dc0077;
+  box-shadow: 0 5px 0 #dc0077;
+}
+#totalghost .flex-control-paging li a {
+  border: 1px #40e0d0 solid;
+}
+#totalghost .flex-control-paging li a.flex-active {
+  background: #40e0d0;
+}
+#totalghost .flex-direction-nav a {
+  color: #191919;
+}
+#totalghost .flex-direction-nav a:hover {
+  color: #40e0d0;
 }
