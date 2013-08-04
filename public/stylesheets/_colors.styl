@@ -1,13 +1,16 @@
+//  !TODO Convert to the styles to a function dammit!
+
+
 btn-depth = 5px
 
-suncorp-bg        = #006c64
+suncorp-bg        = #006f66
 suncorp-text      = whitesmoke
-suncorp-btn       = #62a6a4
+suncorp-btn       = #5ebfbc
 suncorp-btn-color = white
 
 #suncorp
-
   background suncorp-bg
+  // background linear-gradient(top, suncorp-bg, lighten(suncorp-bg, 15%))
   color suncorp-text
 
   .btn
@@ -32,10 +35,11 @@ suncorp-btn-color = white
 rea-bg        = #c8012e
 rea-text      = white
 rea-btn       = whitesmoke
-rea-btn-color = #c8012e
+rea-btn-color = #5d5d5d
 
 #rea
   background rea-bg
+  // background linear-gradient(top, rea-bg, lighten(rea-bg, 15%))
   color rea-text
 
   .btn
@@ -55,112 +59,118 @@ rea-btn-color = #c8012e
     &:hover
       color rea-text
 
-//  Convert to the style above & make a function dammit!
-
-rea2-a = #ececec
-rea2-b = #c8012e
-rea2-c = #c8012e
+rea2-bg        = #909db0
+rea2-text      = white
+rea2-btn       = #c8012e
+rea2-btn-color = white
 
 #rea2
-  background rea2-a
-  color rea2-b
+  background rea2-bg
+  // background linear-gradient(top, rea2-bg, lighten(rea2-bg, 15%))
+  color rea2-text
 
   .btn
-    background rea2-c
-    color rea2-a
-    box-shadow 0 btn-depth 0 darken(rea2-c, 20%)
+    background rea2-btn
+    color rea2-btn-color
+    box-shadow 0 btn-depth 0 darken(rea2-btn, 20%)
 
   .flex-control-paging li a
-    border 1px rea2-b solid
+    border 1px rea2-text solid
 
     &.flex-active
-      background rea2-b
+      background rea2-text
 
   .flex-direction-nav a
-    color darken(rea2-a, 20%)
+    color darken(rea2-bg, 20%)
 
     &:hover
-      color rea2-b
+      color rea2-text
 
-tiger-a = #fc9300
-tiger-b = white
-tiger-c = #26A9E1
+tiger-bg        = #fc9300
+tiger-text      = white
+tiger-btn       = #26A9E1
+tiger-btn-color = white
 
 #tiger
-  background tiger-a
-  color tiger-b
+  background tiger-bg
+  // background linear-gradient(top, tiger-bg, lighten(tiger-bg, 15%))
+  color tiger-text
 
   .btn
-    background tiger-c
-    color tiger-b
-    box-shadow 0 btn-depth 0 darken(tiger-c, 20%)
+    background tiger-btn
+    color tiger-btn-color
+    box-shadow 0 btn-depth 0 darken(tiger-btn, 20%)
 
   .flex-control-paging li a
-    border 1px tiger-b solid
+    border 1px tiger-text solid
 
     &.flex-active
-      background tiger-b
+      background tiger-text
 
   .flex-direction-nav a
-    color darken(tiger-a, 20%)
+    color darken(tiger-bg, 20%)
 
     &:hover
-      color tiger-b
+      color tiger-text
 
-pin-a = #6c3
-pin-b = white
-pin-c = #004C74
+
+pin-bg        = #6c3
+pin-text      = white
+pin-btn       = #004C74
+pin-btn-color = white
 
 #pin
-  background pin-a
-  color pin-b
+  background pin-bg
+  // background linear-gradient(top, pin-bg, lighten(pin-bg, 15%))
+  color pin-text
 
   .btn
-    background pin-c
-    color pin-b
-    box-shadow 0 btn-depth 0 darken(pin-c, 20%)
+    background pin-btn
+    color pin-btn-color
+    box-shadow 0 btn-depth 0 darken(pin-btn, 20%)
 
   .flex-control-paging li a
-    border 1px pin-b solid
+    border 1px pin-text solid
 
     &.flex-active
-      background pin-b
+      background pin-text
 
   .flex-direction-nav a
-    color darken(pin-a, 20%)
+    color darken(pin-bg, 20%)
 
     &:hover
-      color pin-b
+      color pin-text
 
-
-zoe-a = #35a6df
-zoe-b = white
-zoe-c = #004C74
+zoe-bg        = #35a6df
+zoe-text      = white
+zoe-btn       = #004C74
+zoe-btn-color = white
 
 #zoe
-  background zoe-a
-  color zoe-b
+  background zoe-bg
+  // background linear-gradient(top, zoe-bg, lighten(zoe-bg, 15%))
+  color zoe-text
 
   .btn
-    background zoe-c
-    color zoe-b
-    box-shadow 0 btn-depth 0 darken(zoe-c, 20%)
+    background zoe-btn
+    color zoe-btn-color
+    box-shadow 0 btn-depth 0 darken(zoe-btn, 20%)
 
   .flex-control-paging li a
-    border 1px zoe-b solid
+    border 1px zoe-text solid
 
     &.flex-active
-      background zoe-b
+      background zoe-text
 
   .flex-direction-nav a
-    color darken(zoe-a, 20%)
+    color darken(zoe-bg, 20%)
 
     &:hover
-      color zoe-b
+      color zoe-text
 
-totalghost-bg        = #1f1f1f
-totalghost-text      = turquoise
-totalghost-btn       = deeppink
+totalghost-bg        = #111
+totalghost-text      = deeppink
+totalghost-btn       = blueviolet
 totalghost-btn-color = white
 
 #totalghost

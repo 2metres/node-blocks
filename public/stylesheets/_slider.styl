@@ -1,9 +1,8 @@
-.iphone .flexslider
+.flexslider
   position relative
   margin 0 auto
 
   .flex-control-paging
-    margin-top -60%
     position absolute
     top 0
     left 0
@@ -54,9 +53,50 @@
         text-indent 200%
 
       &:first-child
-        left -40%
+        left -30%
         text-align left
 
       &:last-child
-        right -40%
+        right -30%
+        text-align right
+
+.iphone 
+  .flex-control-paging
+    margin-top: -150px
+
+  .flex-direction-nav  
+    li
+      &:first-child
+        left -30%
+        text-align left
+
+      &:last-child
+        right -30%
+        text-align right
+.ipad 
+  .flex-control-paging
+    margin-top: -120px
+
+  .flex-direction-nav
+    li
+      &:first-child
+        left -20%
+        text-align left
+
+      &:last-child
+        right -20%
+        text-align right
+
+.desktop 
+  .flex-control-paging
+    margin-top: -80px
+
+  .flex-direction-nav
+    li
+      &:first-child
+        left -15%
+        text-align left
+
+      &:last-child
+        right -15%
         text-align right
