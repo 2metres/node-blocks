@@ -96,10 +96,11 @@ a img {
 }
 body {
   text-align: center;
-  font-family: 'Source Sans Pro', 'HelveticaNeue-Light', sans-serif;
-  font-weight: 300;
+  font-family: 'HelveticaNeue-Light', sans-serif;
+  font-weight: 100;
   min-width: 320px;
   font-size: 18px;
+  letter-spacing: -0.01em;
 }
 img {
   max-width: 100%;
@@ -109,10 +110,10 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Dosis', 'HelveticaNeue-Light', sans-serif;
-  font-weight: 800;
+  font-family: 'Varela Round', 'HelveticaNeue-Light', sans-serif;
+  font-weight: 700;
   line-height: 100%;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.03em;
   margin: 0.2em 0 0.4em;
 }
 h1 {
@@ -153,6 +154,8 @@ h5 {
   max-width: 240px;
   font-size: 120%;
   font-weight: 700;
+  font-family: 'Varela Round', 'HelveticaNeue-Light', sans-serif;
+  letter-spacing: -0.05em;
 }
 .project {
   padding: 20px 0 0;
@@ -179,17 +182,17 @@ header h1 {
   margin-bottom: 0;
 }
 header h4 {
-  font-weight: 300;
+  font-weight: 100;
 }
 .gallery {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  -webkit-transition: opacity 700ms ease-in;
-  -moz-transition: opacity 700ms ease-in;
-  -o-transition: opacity 700ms ease-in;
-  -ms-transition: opacity 700ms ease-in;
-  transition: opacity 700ms ease-in;
+  -webkit-transition: opacity 700ms linear 500ms, top 700ms ease-in-out 500ms;
+  -moz-transition: opacity 700ms linear 500ms, top 700ms ease-in-out 500ms;
+  -o-transition: opacity 700ms linear 500ms, top 700ms ease-in-out 500ms;
+  -ms-transition: opacity 700ms linear 500ms, top 700ms ease-in-out 500ms;
+  transition: opacity 700ms linear 500ms, top 700ms ease-in-out 500ms;
 }
 .gallery.iphone {
   padding-bottom: 100%;
@@ -200,7 +203,7 @@ header h4 {
   right: 0;
   bottom: 0;
   left: 0;
-  margin: 23% 29% 2.9% 29%;
+  margin: 23% 29% 3.2% 29%;
   background: #3a2837;
   border: 3px #141313 solid;
   -webkit-border-radius: 3px;
@@ -245,6 +248,52 @@ header h4 {
   -moz-background-size: cover;
   background-size: cover;
 }
+.gallery.htc-one {
+  padding-bottom: 100%;
+}
+.gallery.htc-one .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 19% 27.5% 2.1% 27.5%;
+  background: #3a2837;
+  border: 3px #141313 solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.gallery.htc-one.white {
+  background-image: url("/images/gallery-htc-one-white.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.gallery.htc-one.black {
+  background-image: url("/images/gallery-htc-one-black.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.gallery.nexus {
+  padding-bottom: 100%;
+  background-image: url("/images/gallery-nexus4.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.gallery.nexus .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 19.5% 26.5% 2% 26.5%;
+  background: #3a2837;
+  border: 3px #141313 solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
 .gallery.desktop {
   padding-bottom: 100%;
   background-image: url("/images/gallery-apple-screen.png");
@@ -266,6 +315,9 @@ header h4 {
   border-radius: 3px;
 }
 @media (min-width: 720px) {
+  .project {
+    padding-top: 40px;
+  }
   .project .gallery {
     width: 720px;
     padding-bottom: 720px;
@@ -676,24 +728,24 @@ footer {
   color: #fff;
 }
 #totalghost {
-  background: #111;
-  color: #ff1493;
+  background: #292338;
+  color: #f5fffa;
 }
 #totalghost .btn {
-  background: #8a2be2;
+  background: #40e0d0;
   color: #fff;
-  -webkit-box-shadow: 0 5px 0 #6f1abd;
-  box-shadow: 0 5px 0 #6f1abd;
+  -webkit-box-shadow: 0 5px 0 #20c6b6;
+  box-shadow: 0 5px 0 #20c6b6;
 }
 #totalghost .flex-control-paging li a {
-  border: 1px #ff1493 solid;
+  border: 1px #f5fffa solid;
 }
 #totalghost .flex-control-paging li a.flex-active {
-  background: #ff1493;
+  background: #f5fffa;
 }
 #totalghost .flex-direction-nav a {
-  color: #0e0e0e;
+  color: #211c2d;
 }
 #totalghost .flex-direction-nav a:hover {
-  color: #ff1493;
+  color: #f5fffa;
 }

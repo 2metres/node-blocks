@@ -2,7 +2,7 @@
   position relative
   width 100%
   margin 0 auto
-  transition opacity 700ms ease-in
+  transition opacity 700ms linear 500ms, top 700ms ease-in-out 500ms
 
   &.iphone
     padding-bottom: 100%
@@ -13,7 +13,7 @@
       right 0
       bottom 0
       left 0
-      margin 23% 29% 2.9% 29%
+      margin 23% 29% 3.2% 29%
       background #3a2837
       border 3px #141313 solid
       border-radius 3px
@@ -48,12 +48,50 @@
       background-image url('/images/gallery-ipad-mini-black.png')
       background-size cover
 
-  &.desktop
+  &.htc-one
     padding-bottom: 100%
+
+    .frame
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      margin 19% 27.5% 2.1% 27.5%
+      background #3a2837
+      border 3px #141313 solid
+      border-radius 3px
+
+    &.white
+      background-image url('/images/gallery-htc-one-white.png')
+      background-size cover
+
+    &.black
+      background-image url('/images/gallery-htc-one-black.png')
+      background-size cover
+
+  &.nexus
+    padding-bottom: 100%
+    background-image url('/images/gallery-nexus4.png')
+    background-size cover
+
+    .frame
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      margin 19.5% 26.5% 2% 26.5%
+      background #3a2837
+      border 3px #141313 solid
+      border-radius 3px
+
+  &.desktop
+    padding-bottom 100%
     background-image url('/images/gallery-apple-screen.png')
     background-size cover
     margin-top -150px
-    
+
     .frame
       position absolute
       top 0
@@ -68,12 +106,15 @@
 @media (min-width: 720px)
 
   .project
+    padding-top 40px
+
     .gallery
       width 720px
       padding-bottom 720px
 
       &.fade-it
+        // top: 120px
         opacity 0
-    
+
       .flexslider .flex-direction-nav li a
         text-indent 0 !important

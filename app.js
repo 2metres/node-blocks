@@ -1,8 +1,8 @@
 // Module dependencies
 
 var express = require('express')
-  , stylus = require('stylus')
-  , nib = require('nib')
+  , stylus  = require('stylus')
+  , nib     = require('nib')
 
 var app = express()
 function compile(str, path) {
@@ -21,8 +21,8 @@ app.use(stylus.middleware(
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function (req, res) {
-  res.render('index', { title : 'Contact' })  
+  res.render('index', { title : 'Contact' })
 })
 
-app.listen(3000)
-console.log('Listening on port 3000')
+app.listen(2000)
+console.log('Listening on port 2000')

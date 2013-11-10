@@ -7,7 +7,7 @@ $(window).load(function() {
     pauseOnHover: true,
     slideshow: false,
     prevText: "<",
-    nextText: ">",  
+    nextText: ">",
     }
   );
 
@@ -20,9 +20,7 @@ $(window).load(function() {
 
 
 $(window).scroll(function(){
-
   $(".gallery").waypoint(function(){
     $(this).removeClass('fade-it');
   },{offset: '70%'});
-
 });
